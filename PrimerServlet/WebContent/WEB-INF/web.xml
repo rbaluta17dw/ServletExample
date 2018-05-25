@@ -1,45 +1,31 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-	version="2.4">
-
-	<display-name>Servlets ejemplo</display-name>
-	<description>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>Servlets ejemplo</display-name>
+  <description>
      Servlets de ejemplo para practicar
   </description>
-
-	<!-- Publicamos nuestro servlet aqui -->
-
-	<servlet>
-		<servlet-name>ListarUsuarios</servlet-name>
-		<servlet-class>controlador.ListarUsuarios</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>ListarUsuarios</servlet-name>
-		<url-pattern>/ListarUsuarios</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Logear</servlet-name>
-		<servlet-class>controlador.Logear</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Logear</servlet-name>
-		<url-pattern>/Logear</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>Salir</servlet-name>
-		<servlet-class>controlador.Salir</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Salir</servlet-name>
-		<url-pattern>/Salir</url-pattern>
-	</servlet-mapping>
-	<!-- Fin de la publicacion de servlets -->
-
+  <servlet>
+    <servlet-name>ListarUsuarios</servlet-name>
+    <servlet-class>controlador.ListarUsuarios</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarUsuarios</servlet-name>
+    <url-pattern>/ListarUsuarios</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Logear</servlet-name>
+    <servlet-class>controlador.Logear</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logear</servlet-name>
+    <url-pattern>/Logear</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Salir</servlet-name>
+    <servlet-class>controlador.Salir</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Salir</servlet-name>
+    <url-pattern>/Salir</url-pattern>
+  </servlet-mapping>
 </web-app>
